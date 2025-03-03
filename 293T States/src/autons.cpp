@@ -345,10 +345,10 @@ void progSkills(){
   pros::delay(1500);
   setIntake(0);
   clamp1.toggle();
-  chassis.pid_drive_set(-12*driveBias, DRIVE_SPEED);
+  chassis.pid_drive_set(-14*driveBias, DRIVE_SPEED);
   pros::delay(500);
   //get first ring
-  chassis.pid_drive_set(30*driveBias, DRIVE_SPEED);
+  chassis.pid_drive_set(32*driveBias, DRIVE_SPEED);
   pros::delay(750);
   chassis.pid_turn_relative_set(30, TURN_SPEED);
   pros::delay(500);
@@ -367,18 +367,17 @@ void progSkills(){
   pros::delay(500);
   //get 2nd ring
   setIntake(127);
-  chassis.pid_turn_relative_set(45, TURN_SPEED);
+  chassis.pid_turn_relative_set(35, TURN_SPEED);
   pros::delay(500);
   chassis.pid_drive_set(42*driveBias, DRIVE_SPEED);
   pros::delay(1500);
   //get third ring
-  chassis.pid_turn_relative_set(95, TURN_SPEED);
+  chassis.pid_turn_relative_set(115, TURN_SPEED);
   pros::delay(500);
-  chassis.pid_drive_set(48*driveBias, DRIVE_SPEED);
-  pros::delay(1250);
-  /*
+  chassis.pid_drive_set(40*driveBias, DRIVE_SPEED);
+  pros::delay(2000);
   //get fourth ring
-  chassis.pid_turn_relative_set(90, TURN_SPEED);
+  chassis.pid_turn_relative_set(75, TURN_SPEED);
   pros::delay(500);
   chassis.pid_drive_set(38*driveBias, DRIVE_SPEED);
   pros::delay(1000);
@@ -387,16 +386,17 @@ void progSkills(){
   pros::delay(500);
   chassis.pid_drive_set(32*driveBias, DRIVE_SPEED);
   pros::delay(1000);
+  //put in corner
   chassis.pid_turn_relative_set(75, TURN_SPEED);
   pros::delay(500);
   leftDoinker.toggle();
-  chassis.pid_drive_set(30*driveBias, DRIVE_SPEED);
+  chassis.pid_drive_set(25*driveBias, DRIVE_SPEED);
   pros::delay(750);
   chassis.pid_turn_relative_set(135, TURN_SPEED);
   pros::delay(750);
   setIntake(0);
   clamp1.toggle();
-  chassis.pid_drive_set(-12*driveBias, DRIVE_SPEED);*/
+  chassis.pid_drive_set(-12*driveBias, DRIVE_SPEED);
 
 
 
